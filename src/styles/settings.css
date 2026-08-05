@@ -1,0 +1,381 @@
+.settings-page{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+/* ===========================
+   Top Cards
+=========================== */
+
+.settings-top{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:24px;
+}
+
+.profile-card,
+.status-card,
+.settings-card{
+
+    background:var(--surface);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid var(--border);
+
+    transition:.3s;
+}
+
+.profile-card:hover,
+.status-card:hover,
+.settings-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(15,23,42,.12);
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+.profile-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.profile-avatar{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+    color:white;
+
+    font-size:34px;
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+.profile-card h2{
+
+    color:var(--text-primary);
+
+    margin-bottom:10px;
+}
+
+.profile-card p{
+
+    color:var(--text-secondary);
+
+    margin-top:12px;
+}
+
+.role-badge{
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.settings-btn{
+
+    margin-top:25px;
+
+    width:100%;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.settings-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Quick Status
+=========================== */
+
+.status-card h2{
+
+    margin-bottom:25px;
+
+    color:var(--text-primary);
+}
+
+.status-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid var(--border);
+}
+
+.status-item:last-child{
+
+    border-bottom:none;
+}
+
+.status-item span{
+
+    color:var(--text-secondary);
+}
+
+.status-item strong{
+
+    color:var(--text-primary);
+}
+
+/* ===========================
+   General Cards
+=========================== */
+
+.settings-card h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text-primary);
+
+    margin-bottom:22px;
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 0;
+
+    border-bottom:1px solid var(--border);
+}
+
+.info-row:last-child{
+
+    border-bottom:none;
+}
+
+.info-row span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text-secondary);
+}
+
+.info-row strong{
+
+    color:var(--text-primary);
+
+    font-weight:600;
+}
+
+.success-text{
+
+    color:#16a34a;
+}
+
+.check-icon{
+
+    color:#16a34a;
+
+    font-size:20px;
+}
+
+/* ===========================
+   Danger Zone
+=========================== */
+
+.danger-card{
+
+    border-left:5px solid #ef4444;
+}
+
+.logout-setting-btn{
+
+    margin-top:10px;
+
+    padding:14px 26px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.logout-setting-btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+    .settings-top{
+
+        grid-template-columns:1fr;
+    }
+
+    .info-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:8px;
+    }
+}
+
+/* ===========================
+   Better Heading
+=========================== */
+
+.page-heading h1{
+    font-size:2.2rem;
+    color:var(--text-primary);
+    margin-bottom:6px;
+}
+
+.page-heading p{
+    color:var(--text-secondary);
+}
+
+/* ===========================
+   Nice Icons
+=========================== */
+
+.settings-card h2 svg{
+    color:var(--primary);
+}
+
+.status-item strong{
+    color:var(--primary);
+}
+
+/* ===========================
+   Card Animation
+=========================== */
+
+.profile-card,
+.status-card,
+.settings-card{
+    overflow:hidden;
+    position:relative;
+}
+
+.profile-card::before,
+.status-card::before,
+.settings-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6,
+        #60a5fa
+    );
+}
+
+/* ===========================
+   Logout Button
+=========================== */
+
+.logout-setting-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+}
+
+/* ===========================
+   Profile Button
+=========================== */
+
+.settings-btn{
+    cursor:pointer;
+}
+
+.settings-btn:hover{
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}

@@ -1,0 +1,882 @@
+.student-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin:25px 0;
+
+    flex-wrap:wrap;
+}
+
+.search-box{
+
+    flex:1;
+
+    min-width:280px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:var(--surface);
+
+    border-radius:14px;
+
+    padding:0 18px;
+
+    box-shadow:var(--shadow);
+}
+
+.search-box svg{
+
+    color:#94a3b8;
+
+    font-size:18px;
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:17px;
+
+    background:transparent;
+
+    color:var(--text-primary);
+}
+
+.search-box input::placeholder{
+
+    color:var(--text-secondary);
+}
+
+.toolbar-actions{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+}
+
+.filter-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:var(--surface);
+
+    padding:0 15px;
+
+    border-radius:14px;
+
+    box-shadow:var(--shadow);
+}
+
+.filter-box svg{
+
+    color:#94a3b8;
+}
+
+.filter-box select{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    padding:15px;
+}
+
+.add-student-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.add-student-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+}
+
+.students-table-card{
+
+    background:var(--surface);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+}
+
+.students-table-card table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.students-table-card thead{
+    background:var(--background);
+}
+
+.students-table-card th{
+    color:var(--text-primary);
+    font-weight:700;
+}
+
+.students-table-card td{
+
+    padding:22px 18px;
+
+    border-top:1px solid var(--border);
+}
+
+.students-table-card tbody tr{
+
+    transition:.25s;
+}
+
+.students-table-card tbody tr:hover{
+
+    background:rgba(255,255,255,.05);
+}
+
+.student-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.student-details{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.student-details strong{
+
+    margin-bottom:4px;
+}
+
+.student-details span{
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+}
+
+.gender-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.gender-badge.male{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+}
+
+.gender-badge.female{
+
+    background:#fce7f3;
+
+    color:#db2777;
+}
+
+.gender-badge.other{
+
+    background:#ede9fe;
+
+    color:#7c3aed;
+}
+
+.action-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.edit-btn,
+.delete-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:17px;
+}
+
+.edit-btn{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:white;
+}
+
+.edit-btn:hover,
+.delete-btn:hover{
+
+    transform:translateY(-2px);
+}
+
+.student-form-card{
+
+    background:var(--surface);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:30px;
+}
+
+.student-form-card h2{
+
+    margin-bottom:20px;
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.form-grid input,
+.form-grid select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:var(--background);
+
+    color:var(--text-primary);
+
+    transition:.25s;
+
+    font-size:15px;
+}
+
+.form-grid input::placeholder{
+
+    color:var(--text-secondary);
+}
+
+.form-grid input:focus,
+.form-grid select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+.form-actions{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:35px;
+    gap:15px;
+}
+
+.form-actions button{
+    width:240px;
+    height:54px;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-actions button:first-child{
+    background:var(--primary);
+    color:#fff;
+}
+
+.form-actions button:last-child{
+    background:#ef4444;
+    color:#fff;
+}
+
+.form-actions button:hover{
+    transform:translateY(-2px);
+}
+
+.pagination{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.page-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 20px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.page-btn:hover:not(:disabled){
+
+    transform:translateY(-2px);
+}
+
+.page-btn:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+}
+
+.page-info{
+
+    font-size:15px;
+
+    color:var(--text-secondary);
+}
+
+.page-info strong{
+
+    color:var(--text-primary);
+}
+
+.page-heading{
+    margin-bottom:35px;
+}
+
+.page-heading h1{
+    margin-bottom:8px;
+}
+
+.students-table-card td{
+
+    color:var(--text-primary);
+}
+
+.student-details strong{
+
+    color:var(--text-primary);
+}
+
+.student-details span{
+
+    color:var(--text-secondary);
+}
+
+/* ===========================
+   Students Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .student-toolbar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .toolbar-actions{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .search-box,
+    .filter-box,
+    .add-student-btn{
+        width:100%;
+    }
+
+    .students-table-card{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:900px;
+    }
+
+
+}
+
+/* =====================================================
+   Enhanced Registration Form
+===================================================== */
+
+.info-card,
+.photo-card{
+
+    background:var(--background);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+}
+
+.info-card h3,
+.photo-card h3{
+
+    margin-bottom:22px;
+
+    color:var(--text-primary);
+
+    font-size:20px;
+
+    font-weight:700;
+}
+
+/* Form */
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--text-secondary);
+}
+
+.form-group textarea{
+
+    width:100%;
+
+    resize:vertical;
+
+    min-height:100px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    outline:none;
+
+    background:var(--background);
+
+    color:var(--text-primary);
+
+    transition:.25s;
+}
+
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+.full-width{
+
+    grid-column:1/-1;
+}
+
+/* Read-only Student ID */
+
+.form-group input[readonly]{
+
+    background:rgba(37,99,235,.08);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    cursor:not-allowed;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .photo-section{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .photo-upload{
+
+        width:100%;
+    }
+
+    .photo-upload input{
+
+        width:100%;
+    }
+}
+
+/* Section Title */
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding-bottom:14px;
+
+    margin-bottom:18px;
+
+    border-bottom:1px solid var(--border);
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+}
+
+.section-title svg{
+
+    color:var(--primary);
+
+    font-size:24px;
+}
+
+/* ===========================
+   Section Grid
+=========================== */
+
+.section-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px 22px;
+}
+
+.student-section{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+
+    transition: all .3s ease;
+}
+
+.student-form-grid{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:24px;
+    margin-bottom:24px;
+}
+
+.bottom-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-bottom:24px;
+}
+
+.full-card{
+    grid-column:1 / -1;
+}
+
+.student-section:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(15,23,42,.12);
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-weight:600;
+    color:var(--text-primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:var(--surface);
+
+    color:var(--text-primary);
+
+    transition:all .25s ease;
+
+    font-size:15px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+    outline:none;
+}
+
+.student-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.student-avatar{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+    color:#fff;
+    font-weight:700;
+}
+
+.student-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ==========================
+   Student Photo
+========================== */
+
+.photo-upload-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:10px 0;
+
+}
+
+.photo-upload-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.photo-upload-info small{
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+
+}
+
+.photo-circle{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    box-shadow:var(--shadow);
+
+}
+
+.photo-circle img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+.upload-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 28px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.upload-btn:hover{
+    transform:translateY(-2px);
+    background:#1d4ed8;
+}
+
+.student-form-grid{
+    display:grid;
+    grid-template-columns:320px
+    minmax(700px,1fr);
+    gap:24px;
+    align-items:start;
+}
+
+.bottom-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-bottom:24px;
+    align-items:start;
+}

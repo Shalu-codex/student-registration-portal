@@ -1,0 +1,177 @@
+.sidebar {
+
+    width: 270px;
+    min-height: 100vh;
+  
+    background: var(--surface);
+  
+    border-right: 1px solid var(--border);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    padding: 28px 22px;
+  
+    position: sticky;
+    top: 0;
+  
+    transition: var(--transition);
+  }
+  
+  /* =======================
+     Logo
+  ======================= */
+  
+  .logo{
+  
+    display:flex;
+  
+    align-items:center;
+  
+    gap:15px;
+  
+    margin-bottom:45px;
+  }
+  
+  .logo-circle{
+  
+    width:55px;
+  
+    height:55px;
+  
+    border-radius:16px;
+  
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+  
+    color:white;
+  
+    display:flex;
+  
+    justify-content:center;
+  
+    align-items:center;
+  
+    font-weight:700;
+  
+    font-size:20px;
+  
+    box-shadow:0 12px 30px rgba(37,99,235,.35);
+  }
+  
+  .logo h2{
+  
+    font-size:20px;
+  
+    font-weight:700;
+  }
+  
+  .logo span{
+  
+    color:var(--text-secondary);
+  
+    font-size:13px;
+  }
+  
+  /* =======================
+        Navigation
+  ======================= */
+  
+  .sidebar nav{
+  
+    display:flex;
+  
+    flex-direction:column;
+  
+    gap:12px;
+  
+    flex:1;
+  }
+  
+  .menu{
+  
+    display:flex;
+  
+    align-items:center;
+  
+    gap:14px;
+  
+    padding:14px 18px;
+  
+    border-radius:14px;
+  
+    color:var(--text-secondary);
+  
+    transition:var(--transition);
+  
+    font-weight:500;
+  }
+  
+  .menu svg{
+  
+    font-size:20px;
+  }
+  
+  .menu:hover{
+  
+    background:#eff6ff;
+  
+    color:var(--primary);
+  
+    transform:translateX(6px);
+  }
+  
+  .menu.active{
+  
+    background:var(--primary);
+  
+    color:white;
+  
+    box-shadow:
+    0 10px 25px
+    rgba(37,99,235,.35);
+  }
+  
+  /* =======================
+        Bottom
+  ======================= */
+  
+  .sidebar-bottom{
+  
+    display:flex;
+  
+    align-items:center;
+  
+    gap:14px;
+  
+    margin-top:40px;
+  
+    padding:18px;
+  
+    border-radius:18px;
+  
+    background:#f8fafc;
+  }
+  
+  .sidebar-bottom svg{
+  
+    font-size:30px;
+  
+    color:var(--primary);
+  }
+  
+  .sidebar-bottom strong{
+  
+    display:block;
+  }
+  
+  .sidebar-bottom span{
+  
+    font-size:13px;
+  
+    color:var(--text-secondary);
+  }
