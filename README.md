@@ -1,8 +1,72 @@
-# React + Vite
+# 🎓 Student Registration Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Student Registration Portal built using React, Node.js, Express, MySQL, and JWT Authentication.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Registration & Login
+- JWT Authentication
+- Student CRUD Operations
+- Dashboard
+- Search Students
+- Analytics Page
+- Profile & Settings
+- Dark Mode UI
+- Responsive Design
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MySQL
+
+### Authentication
+- JWT (JSON Web Token)
+
+## 📂 Project Structure
+
+```
+frontend/
+backend/
+database/
+```
+
+## 🚀 Installation
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+## Database
+
+Import
+
+```
+database/schema.sql
+```
+
+into MySQL.
+
+## Author
+
+**Shalu**
