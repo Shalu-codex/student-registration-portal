@@ -70,3 +70,41 @@ into MySQL.
 ## Author
 
 **Shalu**
+
+## 📸 Project Screenshots
+
+### Login
+![Login](docs/login.PNG)
+
+### Register
+![Register](docs/login-register.PNG)
+
+### Dashboard
+![Dashboard](docs/dashboard.PNG)
+
+### Dashboard Statistics
+![Dashboard Stats](docs/dashboard-stats.PNG)
+
+### Students List
+![Students List](docs/students-list.PNG)
+
+### Add Student
+![Add Student](docs/students-add.PNG)
+
+### Student Registration
+![Student Registration](docs/students-registration.PNG)
+
+### Analytics Overview
+![Analytics Overview](docs/analytics-overview.PNG)
+
+### Analytics Charts
+![Analytics Charts](docs/analytics-charts.PNG)
+
+### Profile Settings
+![Profile Settings](docs/settings-profile.PNG)
+
+### Security Settings
+![Security Settings](docs/settings-security.PNG)
+
+### System Settings
+![System Settings](docs/settings-system.PNG)
